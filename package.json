@@ -1,0 +1,22 @@
+{
+  "name": "dl-resume-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyperkind/dl-resume-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyperkind/dl-resume-project/issues"
+  },
+  "homepage": "https://github.com/Hyperkind/dl-resume-project#readme",
+  "dependencies": {
+    "handlebars": "^4.0.6"
+  }
+}
