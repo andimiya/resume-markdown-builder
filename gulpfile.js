@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var declare = require('gulp-declare');
 var gulp = require('gulp');
 var handlebars = require('gulp-handlebars');
+var minifyCSS = require('gulp-minify-css');
 var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
 var wrap = require('gulp-wrap');
@@ -19,8 +20,8 @@ gulp.task('server', function () {
     });
 });
 
-gulp.task('templates', function(){
-  gulp.src('source/templates/*.hbs')
+gulp.task('html', function(){
+  gulp.src('./app/templates/index.hbs')
   .pipe(handlebars())
   .pipe(wrap('Handlebars.template(<%= contents %>)'))
   .pipe(declare({
@@ -28,20 +29,22 @@ gulp.task('templates', function(){
     noRedeclare: true, // Avoid duplicate declarations
   }))
   .pipe(concat('templates.js'))
-  .pipe(gulp.dest('build/js/'));
+  .pipe(gulp.dest('./build/html/'));
 });
 
-gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+gulp.task('styles', function () {
+  return gulp.src('./app/sass/styles.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./app/css'))
+    .pipe(minifyCSS())
+    .pipe(gulp.dest('./build/styles/'))
 });
 
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['server', 'templates', 'sass', 'sass:watch'])
+gulp.task('default', ['server', 'html', 'styles', 'sass:watch'])
 
 
 
