@@ -18,5 +18,10 @@
   "homepage": "https://github.com/Hyperkind/dl-resume-project#readme",
   "dependencies": {
     "handlebars": "^4.0.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-sass": "^3.0.0"
   }
 }
