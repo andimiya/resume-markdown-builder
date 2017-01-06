@@ -21,7 +21,13 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-build": "^0.5.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
     "gulp-handlebars": "^4.0.0",
-    "gulp-sass": "^3.0.0"
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-wrap": "^0.13.0"
   }
 }
