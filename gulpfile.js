@@ -4,7 +4,9 @@ var build = require('gulp-build');
 var concat = require('gulp-concat');
 var declare = require('gulp-declare');
 var gulp = require('gulp');
-var handlebars = require('gulp-handlebars');
+// var handlebars = require('gulp-handlebars');
+var handlebars = require('handlebars');
+var gulpHandlebars = require('gulp-compile-handlebars')(handlebars);
 var minifyCSS = require('gulp-minify-css');
 var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
@@ -20,16 +22,9 @@ gulp.task('server', function () {
     });
 });
 
-gulp.task('html', function(){
-  gulp.src('./app/templates/index.hbs')
-  .pipe(handlebars())
-  .pipe(wrap('Handlebars.template(<%= contents %>)'))
-  .pipe(declare({
-    namespace: 'MyApp.templates',
-    noRedeclare: true, // Avoid duplicate declarations
-  }))
-  .pipe(concat('templates.js'))
-  .pipe(gulp.dest('./build/html/'));
+gulp.task('handlebars', function() {
+  gulp.src('./app/html/index.hbs')
+  .pipe(gulp.dest('./build/html'));
 });
 
 gulp.task('styles', function () {
@@ -41,10 +36,10 @@ gulp.task('styles', function () {
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./app/sass/*.scss', ['sass']);
+  gulp.watch('./app/sass/*.scss', ['styles']);
 });
 
-gulp.task('default', ['server', 'html', 'styles', 'sass:watch'])
+gulp.task('default', ['server', 'handlebars', 'styles', 'sass:watch'])
 
 
 

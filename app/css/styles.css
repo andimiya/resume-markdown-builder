@@ -1,2 +1,4 @@
 html {
   background-color: cornflowerBlue; }
+  html h1 {
+    background-color: green; }
