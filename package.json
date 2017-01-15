@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/Hyperkind/dl-resume-project#readme",
   "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.6"
   },
   "devDependencies": {
