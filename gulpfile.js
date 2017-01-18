@@ -9,6 +9,7 @@ var handlebars = require('handlebars');
 var gulpHandlebars = require('gulp-compile-handlebars')(handlebars);
 var minifyCSS = require('gulp-minify-css');
 var nodemon = require('gulp-nodemon');
+var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var wrap = require('gulp-wrap');
 
@@ -24,6 +25,7 @@ gulp.task('server', function () {
 
 gulp.task('handlebars', function() {
   gulp.src('./app/html/index.hbs')
+  .pipe(rename('index.html'))
   .pipe(gulp.dest('./build/html'));
 });
 
@@ -35,8 +37,12 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('./build/styles/'))
 });
 
+gulp.task('handlebars:watch', function () {
+  gulp.watch('./app/html/*.hbs', ['handlebars']);
+});
+
 gulp.task('sass:watch', function () {
   gulp.watch('./app/sass/*.scss', ['styles']);
 });
 
-gulp.task('default', ['server', 'handlebars', 'styles', 'sass:watch']);
+gulp.task('default', ['server', 'handlebars', 'handlebars:watch', 'styles', 'sass:watch']);
