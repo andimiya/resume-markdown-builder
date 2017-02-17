@@ -5,12 +5,12 @@ var exphbs  = require('express-handlebars');
 
 var app = express();
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
-app.use(express.static('./build'));
+app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs', layoutsDir: __dirname + '/public/views/layouts' }));
+app.set('views', __dirname + '/public/views');
+app.set('view engine', '.hbs');
 
 app.get('/', function (req, res) {
-  res.render('index');
+  res.render('home');
 });
 
 var server = app.listen(3000, function () {
