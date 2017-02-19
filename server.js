@@ -1,16 +1,15 @@
 'use strict';
 
 var express = require('express');
-var exphbs  = require('express-handlebars');
 
 var app = express();
 
-app.engine('.hbs', exphbs({ defaultLayout: 'main', extname: '.hbs', layoutsDir: __dirname + '/public/views/layouts' }));
-app.set('views', __dirname + '/public/views');
-app.set('view engine', '.hbs');
+app.set('public');
+app.set('view engine', 'html');
+app.use(express.static(__dirname + '/public'));
 
 app.get('/', function (req, res) {
-  res.render('home');
+  res.render('index');
 });
 
 var server = app.listen(3000, function () {
