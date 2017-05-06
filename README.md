@@ -26,3 +26,4 @@
 - paste it into the index.html file in your `yourusername.github.io` directory
 - copy the public/styles.css file from your resume builder
 - paste it into the `styles.css` file in your `yourusername.github.io` directory
+- git push to master in your username.github.io repo
