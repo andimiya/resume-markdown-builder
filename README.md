@@ -10,6 +10,7 @@
 - git add --all
 - git commit
 - git push -u origin master
+- view your public page at yourusername.github.io
 
 ## Use the markdown resume builder
 
