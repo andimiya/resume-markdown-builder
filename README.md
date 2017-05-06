@@ -15,6 +15,7 @@
 ## Use the markdown resume builder
 
 - fork and clone this repo
+- `npm install`
 - run `gulp`
 - create your resume in the app/index.md file using ONLY markdown
 - some default styles are already pre-loaded. if you'd like to override any defaults with your own custom styling, add your styles to app/scss/styles.scss
