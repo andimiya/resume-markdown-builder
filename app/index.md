@@ -1,15 +1,15 @@
 # Andrea Takamiya
 
-- 95-259 Kehepue Loop
-- Mililani, HI 96789
-- (808) 295-4260
-- takamiya.andrea@gmail.com 
+1. 123 Manoa Drive
+2. Honolulu, HI 96789
+3. (808) 255-5555
+4. email@gmail.com 
 
 ## Professional Experience
 
  **Online Experience Manager**
 
- Hawaiian Airlines     Honolulu, HI  2014 – Present
+ Hawaiian Airlines Honolulu, HI  2014 – Present
 - Worked closely with designers to create a new user-interface and user-experience for HawaiianAirlines.com.
 - Served as Product Owner on the HawaiianAirlines.com re-platforming project and guided cross-functional teams to successfully decommission the old HawaiianAirlines.com websites and launch seven multi-currency, multi-lingual websites for the airline.
 - Managed the needs of the airline and its many stakeholders against the priorities of IT, government regulations and project timelines to ensure everyone was working towards a clear vision, hitting milestones set by the business, and accomplishing the goals of the project.

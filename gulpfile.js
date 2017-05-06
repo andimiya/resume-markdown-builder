@@ -16,7 +16,8 @@ gulp.task('watch-files', function() {
 gulp.task('markdown', function() {
   gulp.src('./app/*.md')
     .pipe(markdown())
-    .pipe(gap.prependText('<link rel="stylesheet" type="text/css" href="https://devleague-resumes.airshipcms.io/assets/styles/default.css"><link rel="stylesheet" type="text/css" href="styles.css">'))
+    .pipe(gap.prependText('<!DOCTYPE html><html><head><link rel="stylesheet" type="text/css" href="https://devleague-resumes.airshipcms.io/assets/styles/default.css"><link rel="stylesheet" type="text/css" href="styles.css"></head>'))
+    .pipe(gap.appendText('</html>'))
     .pipe(gulp.dest('public'))
     .pipe(connect.reload());
 });
