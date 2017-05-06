@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Hyperkind/dl-resume-project#readme",
   "dependencies": {
   "express": "^4.14.0",
+  "gulp-append-prepend": "^1.0.3",
   "gulp-connect": "^5.0.0"
   },
   "devDependencies": {
