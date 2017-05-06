@@ -6,8 +6,7 @@
 - repo's name MUST be `yourusername.github.io`
 - `cd yourusername.github.io`
 - touch index.html
-- mkdir css
-- touch css/main.css
+- touch styles.css
 - git add --all
 - git commit
 - git push -u origin master
@@ -24,4 +23,4 @@
 - copy the public/index.html file from your resume builder
 - paste it into the index.html file in your `yourusername.github.io` directory
 - copy the public/styles.css file from your resume builder
-- paste it into the `css/main.css` file in your `yourusername.github.io` directory
+- paste it into the `styles.css` file in your `yourusername.github.io` directory
