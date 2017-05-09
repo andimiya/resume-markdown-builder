@@ -2,7 +2,7 @@
 
 1. 123 Manoa Drive Honolulu, HI 96822
 1. (808) 555-5555
-1. [https://github.com/andimiya](https://github.com/andimiya)
+1. [github-url](https://github.com/andimiya)
 1. [linkedin-url](linkedin-url)
 
 ## Objective
