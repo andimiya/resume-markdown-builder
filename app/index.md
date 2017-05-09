@@ -1,4 +1,4 @@
-# Andrea Takamiya
+# Your Name
 
 1. 123 Manoa Drive Honolulu, HI 96822
 1. (808) 555-5555
@@ -26,8 +26,8 @@ I am a web developer...(what profession are you seeking?)
 
 ## Professional Experience
 
-### Online Experience Manager
-#### Hawaiian Airlines Honolulu
+### Senior Software Developer
+#### Acme Corp, Honolulu
 ##### HI 2014 – Present  
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat metus orci, vitae egestas sapien tincidunt ac.
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat metus orci, vitae egestas sapien tincidunt ac.
