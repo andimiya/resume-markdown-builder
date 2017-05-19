@@ -1,19 +1,61 @@
-html *
-{
-  font-family: 'PT Sans', sans-serif;
-}
-
-h1 {
-  font-family: 'Roboto Condensed';
-  text-transform: uppercase;
-  font-size: 34px;
-  text-align: center;
-}
-
-.page-container {
-  display: flex;
-}
-
-.column-container {
-
-}
+// html *
+// {
+//   font-family: 'PT Sans', sans-serif;
+// }
+//
+// h1 {
+//   text-transform: uppercase;
+//   font-size: 34px;
+//   text-align: center;
+//
+// }
+//
+// h2 {
+//   text-transform: uppercase;
+//   font-size: 18px;
+//   width: 100%;
+//   height: 30px;
+//   border: 10px solid purple;
+// }
+//
+// .page-container {
+//   display: flex;
+//   border: 10px solid green;
+//   box-sizing: border-box;
+//   flex-wrap: wrap;
+// }
+//
+// .header {
+//   border: 10px solid red;
+//   box-sizing: border-box;
+//   width: 100%;
+// }
+//
+// .column-container {
+//   border: 10px solid blue;
+//   box-sizing: border-box;
+//   width: 30%;
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-content: flex-start;
+// }
+//
+// .content-container {
+//   box-sizing: border-box;
+//   border: 10px solid yellow;
+//   width: 70%;
+// }
+//
+// .info-icons {
+//   border: 10px solid red;
+//   box-sizing: border-box;
+//   width: 10%;
+//
+// }
+//
+// .info-content {
+//   border: 10px solid green;
+//   box-sizing: border-box;
+//   width: 90%;
+//
+// }
